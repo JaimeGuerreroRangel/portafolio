@@ -4,6 +4,7 @@ const mensaje = document.querySelector(".mensaje");
 const btnCopy = document.querySelector(".copiar");
 // Oculta el botón de copiar al inicio
 btnCopy.style.display = "none";
+let encriptado = false;
 
 // Función para encriptar el mensaje
 function btnEncriptar() {
@@ -18,6 +19,10 @@ function btnEncriptar() {
         inputTexto.value = "";
         return;
     }
+    if (encriptado) {
+        alert("El mensaje ya está encriptado");
+        return;
+    }
     // Llama a la función encriptar y guarda el resultado en una variable
     const textoEncriptado = encriptar(inputTexto.value);
     // Muestra el texto encriptado en el área de texto del mensaje
@@ -28,6 +33,7 @@ function btnEncriptar() {
     inputTexto.value = "";
     // Muestra el botón de copiar
     btnCopy.style.display = "block";
+    encriptado = true;
 }
 
 // Función para encriptar el mensaje
@@ -54,12 +60,18 @@ function btnDesencriptar() {
         alert("Error: No hay texto para desencriptar");
         return; // No hacer nada si no hay texto
     }
+    // Verificar si el mensaje ya está desencriptado
+    if (!encriptado) {
+        alert("El mensaje ya está desencriptado");
+        return;
+    }
     // Llama a la función desencriptar y guarda el resultado en una variable
     const textoEncriptado = desencriptar(inputTexto.value);
     // Muestra el texto desencriptado en el área de texto del mensaje
     mensaje.value = textoEncriptado;
     // Limpia el área de texto de entrada
     inputTexto.value = "";
+    encriptado = false;
 }
 
 // Función para desencriptar el mensaje
