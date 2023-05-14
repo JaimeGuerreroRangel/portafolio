@@ -1,34 +1,34 @@
 # Portafolio
 Retos para el curso de Alura Grupo 5
 
-#Encriptador de Texto
+## Encriptador de Texto
 
 https://jaimeguerrerorangel.github.io/portafolio/
 
-Descripción
-Primer desafio de Alura.
+## Descripción
+Este es el primer desafío del curso de Alura.
 
-Se realizo el siguiente programa de encriptacion de texto.
-El cual realiza las siguientes opciones.
+Se ha desarrollado un programa de encriptación de texto que realiza las siguientes conversiones:
 
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
+- La letra "e" se convierte en "enter".
+- La letra "i" se convierte en "imes".
+- La letra "a" se convierte en "ai".
+- La letra "o" se convierte en "ober".
+- La letra "u" se convierte en "ufat".
 
 Requisitos:
 
-Debe funcionar solo con letras minúsculas
-No deben ser utilizados letras con acentos ni caracteres especiales
-Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
-Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+- Debe funcionar solo con letras minúsculas.
+- No se deben utilizar letras con acentos ni caracteres especiales.
+- Debe ser posible convertir una palabra a su versión encriptada y también volver a la versión original.
+  Por ejemplo:
+  - "gato" => "gaitober"
+  - "gaitober" => "gato"
 
-La página debe tener campos para
-inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.
-El resultado debe ser mostrado en la pantalla.
+La página debe incluir campos para la inserción del texto que se encriptará o desencriptará, y el usuario debe poder elegir entre estas dos opciones. El resultado se mostrará en pantalla.
+
 Extras:
 
-Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+- Se ha añadido un botón para copiar el texto encriptado/desencriptado al portapapeles, proporcionando la misma funcionalidad que Ctrl+C o la opción "copiar" del menú de las aplicaciones.
+
+## Código desarrollado por Jaime Guerrero Rangel
