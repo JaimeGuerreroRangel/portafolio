@@ -81,25 +81,31 @@ footer {
 }
 
 .input-texto {
-    margin-top: 90px;
+  margin-top: 90px;
+  border-radius: 10px; /* Añade esta línea para redondear los bordes */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); /* Añade esta línea para agregar una sombra */
 }
-
 
 .mensaje {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 90px;
-    background-image: url("/imagenes/png-transparent-inspector-clouse-removebg-preview.png");
-    background-repeat: no-repeat;
-    background-position: 18px;
-    background-size: 300px;
-    padding-bottom: 20px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 90px;
+  background-image: url("/imagenes/png-transparent-inspector-clouse-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: 18px;
+  background-size: 300px;
+  padding-bottom: 20px;
+  border-radius: 10px; /* Añade esta línea para redondear los bordes */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); /* Añade esta línea para agregar una sombra */
 }
 
+
 .copiar {
-    background: #04b5bb;
-    color: #FFF;
+    background: #ffffff;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
+    color: #000000;
     position: relative;
     margin-top: 20px;
     margin-left: 205px;
@@ -164,5 +170,5 @@ footer {
 
 .informacion {
     font-size: 15px;
+    font-weight: bold;
 }
-
