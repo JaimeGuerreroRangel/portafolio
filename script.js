@@ -97,9 +97,9 @@ function btnCopiar() {
     // Verifica si el navegador es compatible con la API del portapapeles
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         // Muestra un mensaje en pantalla para que el usuario copie el texto manualmente
-        alert("Para copiar el texto, selecciona y mantén presionado para aparecer el menú de opciones y luego selecciona 'Copiar'.");
+        //alert("Para copiar el texto, selecciona y mantén presionado para aparecer el menú de opciones y luego selecciona 'Copiar'.");
     } else {
         // Muestra una ventana de alerta al usuario con el mensaje "Texto Copiado"
-        alert("Texto Copiado");
+        //alert("Texto Copiado");
     }
 }
