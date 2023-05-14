@@ -1,0 +1,80 @@
+
+/* Estilos generales */
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+    /* Tamaño de fuente más pequeño */
+    * {
+        font-size: 16px;
+    }
+
+    /* Alineación y tamaño del logotipo en dispositivos móviles */
+    .logo-container img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    }
+
+    /* Estilos de la sección principal en dispositivos móviles */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px; /* Ajusta los márgenes según sea necesario */
+    }
+
+    /* Estilos del textarea en dispositivos móviles */
+    .input-texto {
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Estilos de los botones en dispositivos móviles */
+    .botones {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .desencriptar {
+        margin-left: 0;
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    }
+
+    /* Estilos del textarea de mensaje en dispositivos móviles */
+    .mensaje {
+        margin-top: 30px;
+        margin-left: 10px;
+        background-position: center;
+        background-size: contain;
+        padding-bottom: 0;
+        resize: none;
+        text-align: center;
+    }
+
+    /* Estilos del botón de copiar en dispositivos móviles */
+    .copiar {
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    /* Estilos del texto de información en dispositivos móviles */
+    .informacion {
+        font-size: 12px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

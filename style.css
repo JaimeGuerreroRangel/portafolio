@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Cambia #f5f5f5 por el color de fondo deseado */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    margin-right: 10px; /* Ajusta el margen según sea necesario */
+  }
+  
+  .title {
+    font-size: 36px; /* Ajusta el tamaño de fuente según sea necesario */
+    color: rgb(67, 102, 214); /* Color inicial del texto */
+    transition: color 0.5s; /* Transición suave de color */
+  }
+
+
+  .title:hover {
+    animation: colorChange 3s infinite; /* Animación de cambio de color */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: orange;
+    }
+    100% {
+      color: purple;
+    }
+  }
+
+
+body {
+    background-color: #FFF;
+    color: #000;
+}
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+} 
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.input-texto {
+    margin-top: 90px;
+}
+
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("/imagenes/png-transparent-inspector-clouse-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    padding-bottom: 20px;
+}
+
+.copiar {
+    background: #04b5bb;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 205px;
+    border-radius: 15px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.encriptar {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.encriptar:hover {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    animation: glowing-encriptar 20s linear infinite;
+}
+
+@keyframes glowing-encriptar {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 800% 0; /* Ajustado el valor de background-position */
+    }
+}
+
+
+.desencriptar {
+    background: rgb(247, 244, 244);
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #080808;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+.informacion {
+    font-size: 15px;
+}
+

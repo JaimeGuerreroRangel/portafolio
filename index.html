@@ -1,0 +1,76 @@
+<!-- Indica que el documento es un archivo HTML5 -->
+<!DOCTYPE html>
+<!-- Inicio del documento HTML, especifica el idioma del contenido como español -->
+<html lang="es">
+<head>
+    <!-- Define la codificación de caracteres del documento como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Establece la compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Establece el ancho de la ventana de visualización y la escala inicial -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa la fuente 'Inter' de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- Vincula la hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_movile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+    <!-- Define el título del documento -->
+    <title>Encriptador</title>
+</head>
+<body>
+    <!-- Cabecera de la página, contiene el logotipo -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="/imagenes/Logo.png" alt="Logo">
+            <span class="title">Encriptador de textos</span>
+        </div>
+    </div>      
+    
+    
+    <!-- Contenedor principal que agrupa el contenido de la página -->
+    <main>
+        <!-- Primera sección que contiene el textarea y los botones de encriptar y desencriptar -->
+        <section>
+            <!-- Textarea para ingresar el texto a encriptar o desencriptar -->
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <!-- Contenedor para mostrar información adicional -->
+            <div id="div-desaparece">
+                <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <!-- Contenedor para los botones de encriptar y desencriptar -->
+            <div class="botones">
+                <!-- Botón para encriptar el texto -->
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <!-- Botón para desencriptar el texto -->
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>        
+        <!-- Segunda sección que contiene el textarea de mensaje encriptado/desencriptado y el botón de copiar -->
+        <section class="mensaje-box">
+            <!-- Textarea para mostrar el mensaje encriptado/desencriptado -->
+            <textarea class="mensaje" cols="18" rows="8">Encripta con astucia y guarda tus secretos a salvo</textarea>
+            <!-- Botón para copiar el contenido del textarea 'mensaje' -->
+            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+        </section>   
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="name">Desarrollado por Jaime Guerrero Rangel</p>
+            <a href="https://github.com/JaimeGuerreroRangel" target="_blank">
+                <i class="fab fa-github" style="margin-right: 10px;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jaime-guer/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+        </div>      
+      </footer>
+    <!-- Vincula el archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Codigo desarrollado por Jaime Guerrero Rangel -->
