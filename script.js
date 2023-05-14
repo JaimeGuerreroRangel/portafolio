@@ -93,7 +93,7 @@ function desencriptar(stringDesencriptada) {
 }
 
 // copiar mensaje
-
+/*
 function btnCopiar() {
     // Selecciona el contenido del área de texto del mensaje
     mensaje.select(); 
@@ -114,4 +114,15 @@ function btnCopiar() {
         // Muestra una ventana de alerta al usuario con el mensaje "Texto Copiado"
         //alert("Texto Copiado");
     }
+}
+*/
+function btnCopiar() {
+    // Selecciona el contenido del área de texto del mensaje
+    mensaje.setSelectionRange(0, mensaje.value.length);
+
+    // Escribe el contenido del área de texto del mensaje en el portapapeles del usuario
+    navigator.clipboard.writeText(mensaje.value);
+
+    // Muestra una ventana de alerta al usuario con el mensaje "Texto Copiado"
+    alert("Texto Copiado");
 }
