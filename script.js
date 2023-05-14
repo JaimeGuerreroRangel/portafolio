@@ -95,11 +95,11 @@ function btnCopiar() {
     // Muestra una ventana de alerta al usuario con el mensaje "Texto Copiado"
     alert("Texto Copiado"); 
     // Verifica si el navegador es compatible con la API del portapapeles
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        // Muestra un mensaje en pantalla para informar al usuario que se copió el texto
-        alert("Texto copiado. Puedes pegarlo en otro lugar usando Ctrl+V o el menú de opciones de tu dispositivo.");
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // Muestra un mensaje en pantalla para que el usuario copie el texto manualmente
+        alert("Para copiar el texto, selecciona y mantén presionado para aparecer el menú de opciones y luego selecciona 'Copiar'.");
     } else {
-        // Muestra un mensaje en pantalla para informar al usuario cómo copiar el texto manualmente
-        alert("Texto copiado. Puedes seleccionar y copiar el texto manualmente.");
+        // Muestra una ventana de alerta al usuario con el mensaje "Texto Copiado"
+        alert("Texto Copiado");
     }
 }
