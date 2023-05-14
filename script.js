@@ -9,6 +9,7 @@ btnCopy.style.display = "none";
 function btnEncriptar() {
     // Verificar si no hay texto en el área de entrada
     if (inputTexto.value.trim() === "") {
+        alert("Error: No hay texto para encriptar");
         return; // No hacer nada si no hay texto
     }
     // Comprobación de texto
@@ -50,6 +51,7 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
     // Verificar si no hay texto en el área de entrada
     if (inputTexto.value.trim() === "") {
+        alert("Error: No hay texto para desencriptar");
         return; // No hacer nada si no hay texto
     }
     // Llama a la función desencriptar y guarda el resultado en una variable
